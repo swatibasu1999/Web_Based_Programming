@@ -1,0 +1,21 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+td,th{
+border-right: 1px solid black;
+border-collapse: collapse;
+}
+
+table{
+    width: 80%;
+    margin-left: 155px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
