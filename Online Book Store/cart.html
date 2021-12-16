@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+        integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        h1 {
+            margin-left: 10%;
+            font-size: 40px;
+        }
+
+        #table {
+            width: 60%;
+        }
+
+        a {
+            color: grey;
+        }
+
+        span {
+            margin-top: 5%;
+            color: rgb(120, 120, 120);
+        }
+
+        #totaldiv {
+            width: 30%;
+            height: 30%;
+        }
+
+        #header {
+            margin-top: 0;
+        }
+
+        .total {
+            padding-left: 6em;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cart <i class='shopping cart icon'></i></h1>
+    <div class='container'>
+        <table class='ui four column table' id='table'>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>Gurgaon to Gurugram <br><span>-Sutpendu P Biswas</span></p>
+                </td>
+                <td>$78.0</td>
+                <td>1</td>
+                <td>$78.00 <br><a href="#">REMOVE</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>India that is Bharat <br> <span>-J Sai Deepak</span></p>
+                </td>
+                <td>$110.0</td>
+                <td>2</td>
+                <td>$220.00 <br><span><a href="#">REMOVE</a></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>In the footsteps of Rama <br> <span>-Neelesh Kulkarni & <br> Vikrant Pandey</span></p>
+                </td>
+                <td>$35.00</td>
+                <td>1</td>
+                <td>$35.00 <br><span><a href="#"></a>Remove</span></td>
+            </tr>
+        </table>
+        <div class='ui placeholder segment' id='totaldiv'>
+            <div class='ui icon header' id='header'>
+                <i class='balance scale icon'></i>
+                3 Items in your Bag
+            </div>
+            <div class='ui divider'></div>
+            <div class='field'>Subtotal <span class='total'>$223.00</span></div>
+            <div class='ui divider'></div>
+            <div class="ui buttons">
+                <button class="ui button">Cancel</button>
+                <div class="or"></div>
+                <a href="payment.html" style="text-decoration: none;">
+                    <button class="ui positive button">Save & Checkout</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
