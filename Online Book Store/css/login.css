@@ -1,0 +1,57 @@
+* {box-sizing: border-box;}
+
+body{
+    background-color: #EFA8E4;
+}
+
+.form{
+  margin: auto;
+  width: 50%;
+  border: 5px solid #04009A;
+  margin-top: 180px;
+  padding: 50px;
+  padding-top: 30px;
+  background-color: #C32BAD;
+}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  /* width: 50%; */
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: #0E49B5;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid #0E49B5;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #0E49B5;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}

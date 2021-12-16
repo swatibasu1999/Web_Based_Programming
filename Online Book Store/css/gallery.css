@@ -1,0 +1,51 @@
+body{
+  background-color: #F8E1F4;
+}
+
+.button {
+  background-color: #94DAFF;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 40%;
+}
+
+.buy {
+  text-align: center;
+}
+
+.gallery {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+    margin-left: 3%;
+    background-color: #C32BAD;
+  }
+
+  img {
+    width: 100%;
+    height: 15em;
+    position: relative
+  }
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .block{
+    display: flex;
+    /* flex-direction: row; */
+    width: 100%;
+    justify-content: center;
+  }
+
+  .heading{
+      text-align: center;
+  }
