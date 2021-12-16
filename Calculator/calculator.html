@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<style>
+    body {
+        background-color: #B4FE98;
+    }
+
+    .tab {
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid black;
+        width: 60%;
+    }
+
+    input[type="button"] {
+        background-color: #C32BAD;
+        color: black;
+        border: solid black 2px;
+        width: 100%;
+        height: 80px;
+        font-size: 3em;
+    }
+
+    input[type="text"] {
+        background-color: white;
+        border: solid black 2px;
+        width: 98%;
+        height: 50px;
+        font-size: 3em;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 4em;
+    }
+</style>
+
+<script>
+    //function that display value
+    function cal(val) {
+        document.getElementById("result").value += val
+    }
+
+    //function that evaluates the digit and return result
+    function solve() {
+        let x = document.getElementById("result").value
+        let y = eval(x)
+        document.getElementById("result").value = y
+    }
+
+    //function that clear the display
+    function clr() {
+        document.getElementById("result").value = ""
+    }
+</script>
+
+<body>
+    <div>
+        <h1>CALCULATOR</h1>
+    </div>
+
+    <table class="tab">
+        <tr>
+            <td colspan="3">
+                <input type="text" id="result">
+            </td>
+            <td> <input type="button" value="C" onclick="clr()"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="1" onclick="cal('1')"></td>
+            <td><input type="button" value="2" onclick="cal('2')"></td>
+            <td><input type="button" value="3" onclick="cal('3')"></td>
+            <td><input type="button" value="/" onclick="cal('/')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="4" onclick="cal('4')"></td>
+            <td><input type="button" value="5" onclick="cal('5')"></td>
+            <td><input type="button" value="6" onclick="cal('6')"></td>
+            <td><input type="button" value="-" onclick="cal('-')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="7" onclick="cal('7')"></td>
+            <td><input type="button" value="8" onclick="cal('8')"></td>
+            <td><input type="button" value="9" onclick="cal('9')"></td>
+            <td><input type="button" value="+" onclick="cal('+')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="." onclick="cal('.')"></td>
+            <td><input type="button" value="0" onclick="cal('0')"></td>
+            <td><input type="button" value="=" onclick="solve()"></td>
+            <td><input type="button" value="*" onclick="cal('*')"></td>
+        </tr>
+    </table>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
