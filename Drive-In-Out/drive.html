@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drive</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<style>
+    body {
+        background-color: #0E49B5;
+    }
+
+    .block {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border: 7px solid black;
+        padding-bottom: 3%;
+        font-family: cursive;
+        background-color: #B983FF;
+    }
+
+    input[type="text"] {
+        background-color: white;
+        border: solid black 2px;
+        width: 50%;
+        height: 50px;
+        font-size: 3em;
+        font-family: cursive;
+        background-color: #FBFF00;
+    }
+
+    .button {
+        width: 30%;
+        padding: 2%;
+        margin-top: 2%;
+        border: 4px solid black;
+        font-size: 2em;
+        font-family: cursive;
+        background-color: #FF00E4;
+        font-weight: bold;
+    }
+
+    .heading {
+        color: white;
+        font-family: cursive;
+        text-align: center;
+        font-size: 1.5em;
+    }
+</style>
+
+<script>
+    function check_age() {
+        var username = document.getElementById("name").value;
+        var user_age = document.getElementById("age").value;
+
+        if (user_age < 18) {
+            alert(username + ", You can't drive!");
+        } else {
+            alert(username + ", You can drive!");
+        }
+    }
+</script>
+
+<body>
+
+    <div class="heading">
+        <h1>Drive In / Drive Out !!!!</h1>
+    </div>
+
+    <div class="block">
+        <label for="name">
+            <h1>NAME - </h1>
+        </label>
+        <input type="text" id="name">
+        <br>
+        <label for="age">
+            <h1>AGE - </h1>
+        </label>
+        <input type="text" id="age">
+
+        <br>
+        <br>
+        <input class="button" type="button" value="SUBMIT" onclick="check_age();" />
+    </div>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
